@@ -1,0 +1,68 @@
+body 
+{
+  background-color: rgba(0, 0, 0, 0.623);
+}
+
+.form-group label {
+  display: block;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-button {
+  padding: 10px 50px;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #2563eb;
+  /* Un azul más oscuro al pasar el mouse */
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+}
+
+main {
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+}
+
+#video-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Margen o espacio encima del video*/
+}
+
+#video-section iframe {
+  width: 100%;
+  max-width: 600px; /* Ancho máximo del video */
+  height: auto;
+  border-radius: 10px;
+  border: 3px solid #727272; /* Borde alrededor del video */
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: flow;
+}
+
+.submit-button {
+  background-color: #3b82f6; /* Un azul más claro */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
