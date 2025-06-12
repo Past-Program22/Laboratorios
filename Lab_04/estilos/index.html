@@ -5,27 +5,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LAB-04</title>
-    <link rel="stylesheet" href="estilos.css">
-    
+  <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
-
   <!-- encabezado de cuerpo de la pagina-->
   <header>
-    <h1>Plataforma Educativa Universidad Central</h1>
+    <div class="contenedor-titulo">
+        <img src="https://www.pinclipart.com/picdir/big/165-1651075_ford-racing-logo-vector-ktm-logo-hd-png.png" 
+        alt="Logo Universidad Central" class="logo-uc">
+        <h1>Plataforma Educativa Universidad Central</h1>
+        <nav>
+            <ul>
+                <li><a href="final/">Inicio</a></li> <!-- Menú -->
+                <li><a href="#">Cursos</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+        </nav>
+    </div>
   </header>
-
-  <!-- menu -->
-  <nav>
-    <ul>
-      <li><a href="final/">Inicio</a></li>
-      <li><a href="#">Cursos</a></li>
-      <li><a href="#">Contacto</a></li>
-      <li><a href="#">Ayuda</a></li>
-    </ul>
-  </nav>
-
+  
   <main>
     <section>
       <form action="#" method="post">
@@ -92,11 +92,15 @@
         </fieldset>
       </form>
     </section>
-    <section>
-      <iframe id="video-section" width="560" height="315" src="https://www.youtube.com/embed/LXb3EKWsInQ?si=KRC7kR0cZzGenVSb&amp;start=61"
-        title="Video Incrustado" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <section> 
+       <div id="video-section"> 
+            <iframe 
+            width="560" height="315" src="https://www.youtube.com/embed/LXb3EKWsInQ?si=KRC7kR0cZzGenVSb&amp;start=61"
+            title="Video Incrustado" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+       </div>
     </section>
   </main>
   <footer>
