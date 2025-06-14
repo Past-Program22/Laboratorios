@@ -12,15 +12,15 @@
   <!-- encabezado de cuerpo de la pagina-->
   <header>
     <div class="contenedor-titulo">
-        <img src="https://www.pinclipart.com/picdir/big/165-1651075_ford-racing-logo-vector-ktm-logo-hd-png.png" 
-        alt="Logo Universidad Central" class="logo-uc">
+        <img src="https://n9.cl/lmgcv" 
+        alt="Logo Universidad Central" class="logo-ca">
         <h1>Plataforma Educativa Universidad Central</h1>
         <nav>
             <ul>
-                <li><a href="final/">Inicio</a></li> <!-- Menú -->
-                <li><a href="#">Cursos</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Ayuda</a></li>
+                <li><a href="index.html" id="inicio-link">Inicio</a></li> <!-- Menú -->
+                <li><a href="#" id="cursos-link">Cursos</a></li>
+                <li><a href="#" id="docentes-link">Docentes</a></li>
+                <li><a href="#" id="estudiantes-link">Estudiantes</a></li>
             </ul>
         </nav>
     </div>
@@ -30,7 +30,7 @@
     <section>
       <form action="#" method="post">
         <fieldset>
-          <legend>Registro de Usuario</legend>
+          <legend class="legend-registro">Registro de Usuario (Docentes o Estudiantes)</legend>
 
           <div class="form-group">
             <label for="username">Nombre de Usuario:</label>
@@ -43,7 +43,19 @@
             <input class="form-input" type="password" id="password" name="password" required>
           </div>
 
-
+          <fieldset>
+            <legend>Rol</legend>
+            <div>
+              <div>
+                <input type="radio" value="d" name="rol" id="d-p">
+                <label for="d-p">Docente</label>
+              </div>
+              <div>
+                <input type="radio" value="e" name="rol" id="r-e">
+                <label for="r-e">Estudiante</label>
+              </div>
+            </div>
+          </fieldset>
 
           <fieldset>
             <legend>Genero</legend>
@@ -56,13 +68,13 @@
                 <input type="radio" value="f" name="genero" id="g-f">
                 <label for="g-f">Femenino</label>
               </div>
+               <div>
+                <input type="radio" value="n" name="genero" id="g-n">
+                <label for="g-n">Prefiero no decirlo</label>
+              </div>
               <div>
                 <input type="radio" value="o" name="genero" id="g-o">
                 <label for="g-o">Otro</label>
-              </div>
-              <div>
-                <input type="radio" value="n" name="genero" id="g-n">
-                <label for="g-n">Prefiero no decirlo</label>
               </div>
             </div>
           </fieldset>
@@ -72,7 +84,7 @@
             <div>
               <div>
                 <input type="checkbox" name="intereses" id="interes1" value="programacion">
-                <label for="interes1">Programación</label>
+                <label for="interes1">Programación Internet</label>
               </div>
               <div>
                 <input type="checkbox" name="intereses" id="interes2" value="diseño">
@@ -86,9 +98,32 @@
                 <input type="checkbox" name="intereses" id="interes4" value="ciencia">
                 <label for="interes4">Ciencia de Datos</label>
               </div>
+              <div>
+                <input type="checkbox" name="intereses" id="interes5" value="matematicas">
+                <label for="interes5">Matemáticas</label>
+              </div>
+              <div>
+                <input type="checkbox" name="intereses" id="interes6" value="economía">
+                <label for="interes6">Economía para Ingeniería</label>
+              </div>
+              <div>
+                <input type="checkbox" name="intereses" id="interes7" value="telemática">
+                <label for="interes7">Telemática I</label>
+              </div>
+              <div>
+                <input type="checkbox" name="intereses" id="interes8" value="organización">
+                <label for="interes8">Organización de Archivos</label>
+              </div>
+              <div>
+                <input type="checkbox" name="intereses" id="interes9" value="otro">
+                <label for="interes9">Otro</label>
+                <input class="text-input" type="text" id="otro-interes" name="otro-interes" placeholder="Especifique otro interés">
+              </div>
           </fieldset>
-
-          <button class="submit-button" type="submit">Registrar</button>
+          <div class="button-group">
+              <button class="submit-button" type="submit">Registrar</button>
+              <button class="clear-button" type="reset">Limpiar datos</button>
+          </div>
         </fieldset>
       </form>
     </section>
@@ -104,9 +139,15 @@
     </section>
   </main>
   <footer>
-    <p>&copy; 2023 Plataforma Educativa Universidad Central</p>
-    <p>Contacto: <a href="mailto:fabian.chinchilla@uc.ac.cr">Fabian</p>
+    <p>&copy; <span id="year"></span> Plataforma Educativa Universidad Central</p>
+    <p>Contacto: <a href="mailto:carcec@edu.uc.ac.cr">Carlos Arce</a></p>
   </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <!-- Este script coloca automáticamente el año actual en el footer, 
+      de modo que no es necesario actualizarlo manualmente cada año. -->
+
 </body>
 
 </html>
