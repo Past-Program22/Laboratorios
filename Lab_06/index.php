@@ -12,7 +12,7 @@
 <body>
     <h2>Registro de Alumnos</h2>
     <form action="procesar.php" method="POST"> <!-- Formulario para registrar alumnos -->
-
+      <input type="text" name="accion" value="insertar">
       <div>
         <label>Nombre/Apellido:</label>
         <input type="text" name="nombre_apellido">
@@ -66,10 +66,7 @@
                     <td>".htmlspecialchars($row['curso'])."</td>
                     <td>".htmlspecialchars($row['fecha_nacimiento'])."</td>
                     <td>{$row['fecha_registro']}</td>
-                    <td>
-                      <a href='procesar.php?eliminar={$row['id']}'>Eliminar</a> <!-- Enlace para eliminar el registro del alumno -->
-                      <a href='editar.php?id={$row['id']}'>Editar</a> <!-- Enlace para editar el registro del alumno -->
-                    </tr>";
+                  </tr>";
           } // htmlspecialchars previene ataques XSS al escapar caracteres especiales como <, >, &, etc.
         ?>
       </tbody>
