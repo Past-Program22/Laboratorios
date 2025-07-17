@@ -50,6 +50,8 @@
           <th>Teléfono</th>
           <th>Curso</th>
           <th>Fecha de Nacimiento</th>
+          <th>Fecha de Registro</th>
+          <th>Acciones</th>
         </tr>
       </thead>
       <tbody>
@@ -64,7 +66,10 @@
                     <td>".htmlspecialchars($row['curso'])."</td>
                     <td>".htmlspecialchars($row['fecha_nacimiento'])."</td>
                     <td>{$row['fecha_registro']}</td>
-                  </tr>";
+                    <td>
+                      <a href='procesar.php?eliminar={$row['id']}'>Eliminar</a> <!-- Enlace para eliminar el registro del alumno -->
+                      <a href='editar.php?id={$row['id']}'>Editar</a> <!-- Enlace para editar el registro del alumno -->
+                    </tr>";
           } // htmlspecialchars previene ataques XSS al escapar caracteres especiales como <, >, &, etc.
         ?>
       </tbody>
