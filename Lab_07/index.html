@@ -1,45 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
-  <title>Laboratorio 07</title>
+  <title>Ejercicio Semana 11</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="estilos.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" 
-  integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" 
-  crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 </head>
 
-<body id="main" class="bg-light">
+<body id="main">
 
-  <div class="my-5">
-    <button class="usuario-btn">
-      <i class="fa-solid fa-sun"></i>
-      <i class="fa-solid fa-moon"></i>
-    </button>
+  <div class="m-3">
+    <i id="tema" class="fa-solid fa-moon" onclick="alternarTema()"></i>
   </div>
 
   <div class="container">
     <h2>Formulario de prueba</h2>
+
     <form id="miFormulario">
       <div class="form-group">
         <label for="nombre">Nombre:</label>
-        <input type="text" class="form-control" id="nombre" required/>
+        <input type="text" class="form-control" id="nombre" required>
       </div>
 
       <div class="form-group">
-        <label for="apellido">Apellido:</label>
-        <input type="text" class="form-control" id="apellido" required/>
+        <label for="nombre">Apellido:</label>
+        <input type="text" class="form-control" id="apellido" required>
       </div>
 
-      <button type="button" class="btn btn-primary" id="validarBtn">Validar</button>
+      <button type="button" class="btn btn-primary" id="validarBtn"><i class="fa-solid fa-floppy-disk"></i>
+        Validar</button>
     </form>
 
     <div class="my-2">
       <p id="mensaje"></p>
-    </div>
 
-    <hr>
+      <hr>
+    </div>
 
     <div id="bloqueTexto" class="caja">
       Este texto cambiará de color dinámicamente.
@@ -48,20 +47,24 @@
     <div class="my-2">
       <button id="agregarClase" class="btn btn-primary">Agregar clase</button>
       <button id="quitarClase" class="btn btn-danger">Quitar clase</button>
-    </div>  
+    </div>
 
     <hr>
 
     <button id="mostrarOcultar" class="btn btn-dark">Mostrar/Ocultar Elemento</button>
     <div id="elementoOculto" style="display:none;">Elemento oculto que puede mostrarse</div>
-
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <div style="text-align: center; margin-top: 20px;">
+    <h3 id="contador">0</h3>
+    <button onclick="modificarContador(1)" class="btn btn-dark">Incrementar</button>
+    <button onclick="modificarContador(-1)" class="btn btn-light">Disminuir</button>
+  </div>
 
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
