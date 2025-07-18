@@ -39,3 +39,21 @@ table th {
     padding:.5rem; 
     background:#e9ecef;
 }
+
+.btn-eliminar {
+    color: red;
+    text-decoration: none;
+}
+
+.btn-eliminar:hover {
+    color: darkred;
+}
+
+.btn-actualizar {
+    color: blue;
+    text-decoration: none;
+}
+
+.btn-actualizar:hover {
+    color: darkblue;
+}
