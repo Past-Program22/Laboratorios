@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio - Carlos Arce Camacho</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #06121e;
+      color: white;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    header {
+      position: relative;
+      width: 100%;
+      padding: 30px 0 80px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 40px;
+    }
+
+    .nav-left, .nav-right {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-left a,
+    .nav-right a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    .nav-left a:hover,
+    .nav-right a:hover {
+      color: #00f0ff;
+    }
+
+    .header-center {
+      margin: 40px 0 20px;
+    }
+
+    .header-center h1 {
+      font-size: 32px;
+      color: #00f0ff;
+    }
+
+    .header-center h2 {
+      font-size: 18px;
+      color: #ffffffaa;
+      margin-top: 5px;
+    }
+
+    .header-line {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+    }
+
+    svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    main {
+      padding: 40px;
+    }
+
+    .logo {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 20px;
+      color: #00ffff;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 150px 80px 80px;
+    }
+
+    .text {
+      flex: 1;
+    }
+
+    .text h1 {
+      font-size: 48px;
+      color: #00ffff;
+    }
+
+    .text h2 {
+      font-size: 32px;
+      margin-top: 10px;
+    }
+
+    .text p {
+      margin-top: 20px;
+      font-size: 16px;
+      max-width: 500px;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .buttons button {
+      margin-right: 15px;
+      padding: 10px 20px;
+      border: 2px solid #00ffff;
+      background: transparent;
+      color: #00ffff;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .buttons button:hover {
+      background: #00ffff;
+      color: #031B34;
+    }
+
+    .profile-card {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      background: #012340;
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+    }
+
+    .card img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid #00ffff;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin-top: 15px;
+      font-size: 24px;
+      color: #00ffff;
+    }
+
+    .social {
+      margin-top: 20px;
+    }
+
+    .social a {
+      margin: 0 10px;
+      color: #fff;
+      font-size: 20px;
+      transition: 0.3s;
+    }
+
+    .social a:hover {
+      color: #00ffff;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="nav-left">
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+      </div>
+      <div class="nav-right">
+        <a href="#projects">Project</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <div class="header-center">
+      <h1>Carlos Daniel Arce Camacho</h1>
+      <h2>Ingeniero en Informática</h2>
+    </div>
+
+    <div class="header-line">
+      <svg viewBox="0 0 100 10" preserveAspectRatio="none">
+        <path d="M0,5 H30 Q50,0 70,5 H100" stroke="#00f0ff" fill="transparent" stroke-width="0.5" />
+      </svg>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="text">
+      <h1>WELCOME TO MY PORTFOLIO</h1>
+      <h2>Front End Developer</h2>
+      <p>I craft responsive and visually engaging websites using tools like HTML, CSS, JavaScript and React.</p>
+      <div class="buttons">
+        <button>Resume</button>
+        <button>Hire Me</button>
+        <button>Contact</button>
+      </div>
+      <div class="social">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fas fa-rocket"></i></a>
+      </div>
+    </div>
+    <div class="profile-card">
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Tu foto">
+        <h3>Carlos Arce</h3>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
