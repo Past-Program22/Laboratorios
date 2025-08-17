@@ -1,8 +1,9 @@
 <?php
-header("Access-Control-Allow-Origin: http://127.0.0.1:3000");
+header("Access-Control-Allow-Origin: https://d7885vl7-80.use2.devtunnels.ms");
 header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type, Authorization");
 header("Access-Control-Allow-Credentials: true");
+
 $apikey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVxc2hncGRtanJ5d3BmaG1hY25tIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTMzMjA1ODMsImV4cCI6MjA2ODg5NjU4M30.b592fmNOienQHwWly5zu49bDV3peVGzfwR8FHJ5a8Eo';
 $urlBase = 'https://eqshgpdmjrywpfhmacnm.supabase.co/rest/v1/usuarios';
 
