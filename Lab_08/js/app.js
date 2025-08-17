@@ -1,4 +1,4 @@
-const apiUrl = 'http://localhost:3000/Lab_08/usuarios.php';
+const apiUrl = 'http://localhost/Laboratorios/Lab_08/usuarios.php';
 
 function listarUsuarios() {
   fetch(apiUrl)
@@ -10,9 +10,10 @@ function listarUsuarios() {
         const li = document.createElement('li');
         li.innerHTML = `
           ${u.nombre} - ${u.email}
-          <button onclick="editarUsuario(${u.id})">Editar</button>
-          <button onclick="eliminarUsuario(${u.id})">Eliminar</button>
+          <button class="btn btn-dark" onclick="editarUsuario(${u.id})">Editar</button>
+          <button class="btn btn-danger" onclick="eliminarUsuario(${u.id})">Eliminar</button>
         `;
+        li.className = 'list-group-item d-flex justify-content-between align-items-center';
         lista.appendChild(li);
       });
     });
@@ -75,6 +76,6 @@ function editarUsuario(id) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  // document.getElementById('formulario').addEventListener('submit', enviarFormulario);
+  document.getElementById('formulario').addEventListener('submit', enviarFormulario);
   listarUsuarios();
 });
