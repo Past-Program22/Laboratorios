@@ -9,9 +9,14 @@ function listarUsuarios() {
       data.forEach(u => {
         const li = document.createElement('li');
         li.innerHTML = `
-          ${u.nombre} - ${u.email}
-          <button class="btn btn-dark" onclick="editarUsuario(${u.id})">Editar</button>
-          <button class="btn btn-danger" onclick="eliminarUsuario(${u.id})">Eliminar</button>
+          <div>
+            <div class="badge badge-primary badge-pill">${u.id}</div>
+            ${u.nombre} - ${u.email}
+          </div>
+          <div>
+            <button class="btn btn-dark" onclick="editarUsuario(${u.id})">Editar</button>
+            <button class="btn btn-danger" onclick="eliminarUsuario(${u.id})">Eliminar</button>
+          </div>
         `;
         li.className = 'list-group-item d-flex justify-content-between align-items-center';
         lista.appendChild(li);
